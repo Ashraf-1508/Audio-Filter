@@ -6,7 +6,7 @@ import soundfile as sf
 
 
 #sampling frequency obtained from the audio file
-sampl_freq=44100 
+sampl_freq=48000 
 
 #order of the filter
 order=3
@@ -35,6 +35,6 @@ omega = np.linspace(0,np.pi,100)
 plt.plot(omega, abs(H(np.exp(1j*omega))))
 plt.xlabel('$\omega$')
 plt.ylabel('$|H(e^{\jmath\omega})| $')
-plt.title("Butterworth Filter in Analog Domain")
+#plt.title("Butterworth Filter in Analog Domain")
 plt.grid()
 plt.savefig("Filter_Response")
