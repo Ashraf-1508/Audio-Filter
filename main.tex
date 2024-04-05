@@ -142,7 +142,7 @@ and find
 \end{equation}
 \solution From \eqref{eq:z_trans},
 \begin{align}
-{\mathcal {Z}}\{x(n-k)\} &=\sum _{n=-\infty }^{\infty }x(n-1)z^{-n}
+{\mathcal {Z}}\{x(n-1)\} &=\sum _{n=-\infty }^{\infty }x(n-1)z^{-n}
 \\
 &=\sum _{n=-\infty }^{\infty }x(n)z^{-n-1} = z^{-1}\sum _{n=-\infty }^{\infty }x(n)z^{-n}
 \end{align}
@@ -479,8 +479,8 @@ https://github.com/Ashraf-1508/Audio-Filter/blob/main/codes/6.1.py
 \solution The code in \ref{prob:audio_filter_problem} generates the values of $a$ and $b$  which can be used to generate a difference equation.\\
 And,
 \begin{align}
-    M &= 5\\
-    N&=5
+    M &= 3\\
+    N&=3
 \end{align}
 From \ref{eq:iir_filter_gen} 
 \begin{align}
